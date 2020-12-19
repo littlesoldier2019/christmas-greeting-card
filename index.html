@@ -10,6 +10,33 @@
 </head>
 
 <body>
+    <div class="top">
+        <button text="Unmuted" id="unmuted" onclick="myFunction()" style="
+        height: 60px;
+        width: 100%;
+        z-index: 5000;
+        "></button>
+
+
+        <script>
+            function myFunction() {
+                var currentStatus = document.getElementById("play").muted;
+                console.log(currentStatus)
+                if (currentStatus) {
+                    document.getElementById("play").muted = false;
+                    document.getElementById("play").play();
+                } else {
+                    document.getElementById("play").muted = true;
+                    document.getElementById("play").pause();
+                }
+            }
+        </script>
+        <video style="display: none" controls autoplay loop muted name="media" id="play">
+            <source
+                src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3?fbclid=IwAR1jr7etZLNbqqK4OWYSnp8558OYccn6fdr6g1MzgFoTBrYQr_Nq1yhet8o"
+                type="audio/mp3">
+        </video>
+    </div>
     <div class="content">
         <div class="_block">
             <div class="_content">
@@ -160,8 +187,7 @@
           c-0.7-0.5-1.5-1-2.2-1.4c-0.4-0.2-0.8-0.4-1.2-0.6C31.4,8.2,31,7.8,31,7c0-1,0.8-1.7,1.7-1.7c0.2,0,0.5,0.1,0.7,0.1
           c7.7,3.3,12.6,10.8,12.6,19.2C46.1,32.9,41.1,40.5,33.5,43.8z"/>
       </svg> -->
-                    <span>Have you arrived home safe and sound?</span>
-                </span>
+                    <span>Have you arrived home safe and sound?</span></span>
             </div>
 
             <svg version="1.1" id="sock_copy" xmlns="http://www.w3.org/2000/svg"
@@ -333,8 +359,7 @@
           c-0.7-0.5-1.5-1-2.2-1.4c-0.4-0.2-0.8-0.4-1.2-0.6C31.4,8.2,31,7.8,31,7c0-1,0.8-1.7,1.7-1.7c0.2,0,0.5,0.1,0.7,0.1
           c7.7,3.3,12.6,10.8,12.6,19.2C46.1,32.9,41.1,40.5,33.5,43.8z"/>
       </svg> -->
-                    <span>Thank you for your guidance, support, and encouragement!</span>
-                </span>
+                    <span>Thank you for your guidance, support, and encouragement!</span></span>
             </div>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
@@ -510,8 +535,7 @@
           c-0.7-0.5-1.5-1-2.2-1.4c-0.4-0.2-0.8-0.4-1.2-0.6C31.4,8.2,31,7.8,31,7c0-1,0.8-1.7,1.7-1.7c0.2,0,0.5,0.1,0.7,0.1
           c7.7,3.3,12.6,10.8,12.6,19.2C46.1,32.9,41.1,40.5,33.5,43.8z"/>
       </svg> -->
-                    <span>You have been an amazing buddy and teammate.</span>
-                </span>
+                    <span>You have been an amazing buddy and teammate.</span></span>
             </div>
             <audio src="http://eagles.lexington.isd.tenet.edu/images/sounds/BD18881_.wav" loop></audio>
             <svg version="1.1" id="leaves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -683,8 +707,7 @@
           c-0.7-0.5-1.5-1-2.2-1.4c-0.4-0.2-0.8-0.4-1.2-0.6C31.4,8.2,31,7.8,31,7c0-1,0.8-1.7,1.7-1.7c0.2,0,0.5,0.1,0.7,0.1
           c7.7,3.3,12.6,10.8,12.6,19.2C46.1,32.9,41.1,40.5,33.5,43.8z"/>
       </svg> -->
-                    <span>Enjoy holiday with your family. A new gorgeous year is waiting for you.</span>
-                </span>
+                    <span>Enjoy holiday with your family. A new gorgeous year is waiting for you.</span></span>
             </div>
 
             <svg version="1.1" id="leaves_copy" xmlns="http://www.w3.org/2000/svg"
@@ -711,11 +734,6 @@
             </svg>
         </div>
     </div>
-    <video controls autoplay loop name="media">
-        <source
-            src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3?fbclid=IwAR1jr7etZLNbqqK4OWYSnp8558OYccn6fdr6g1MzgFoTBrYQr_Nq1yhet8o"
-            type="audio/mp3">
-    </video>
 </body>
 
 </html>
